@@ -16,7 +16,7 @@
 
 ## 🖼️ アプリの画面例
 
-![ホーム画面](screenshots/screenshot_24-9-2025_53449_localhost)
+![ホーム画面](screenshots/screenshot_24-9-2025_53449_localhost.jpeg)
 
 ## 📁 フォルダ構成
 
