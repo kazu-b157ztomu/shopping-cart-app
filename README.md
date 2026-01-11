@@ -1,6 +1,7 @@
 # 🛍 Simple Shopping Cart App
 
-このプロジェクトは、React + TypeScript + Tailwind CSS を使用して構築されたシンプルなショッピングカートアプリです。商品一覧、詳細ページ、カート管理、チェックアウト機能を備えています。
+このプロジェクトは、ショッピングカートアプリのフロントエンドです。
+バックエンド API と連携し、商品一覧・詳細・カート・チェックアウト・ログイン機能を提供します。
 
 ---
 
@@ -16,7 +17,7 @@
 
 ## 🖼️ アプリの画面例
 
-![ホーム画面](screenshots/screenshot_24-9-2025_53449_localhost.jpeg)
+![ホーム画面](screenshots/screenshot_11-1-2026_204622_localhost.jpeg)
 
 ## 📁 フォルダ構成
 
@@ -25,11 +26,17 @@ src/
 │ ├── ProductList.tsx
 │ ├── ProductDetail.tsx
 │ ├── Cart.tsx
-│ └── Checkout.tsx
+│ |── Checkout.tsx
+| └── ProtectedRoute.tsx
 ├── context/ # グローバル状態管理（Context）
-│ └── CartContext.tsx
+│ ├── CartContext.tsx
+│ └── UserContext.tsx
 ├── data/ # 商品データと型定義
 │ └── data.ts
+│── pages
+│ │── Login.css
+│ │── Login.tsx
+│ └── Register.tsx
 ├── App.tsx # ルーティングとレイアウト
 ├── index.js # エントリーポイント
 └── index.css
@@ -39,13 +46,13 @@ src/
 ```bash
 # リポジトリをクローン
 git clone https://github.com/kazu-b157ztomu/shopping-cart-app.git
-cd shopping-cart-app
+cd shopping-cart-frontend
 
 # 依存関係をインストール
 npm install
 
 # 開発サーバーを起動
-npm run dev
+npm start
 
 
 🧪 主な機能
@@ -58,6 +65,8 @@ npm run dev
 ・合計金額の計算
 
 ・チェックアウトフォーム（バリデーション付き）
+
+・ログイン機能
 
 ・グローバルなカート状態管理（Context API）
 

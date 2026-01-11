@@ -26,10 +26,10 @@ const Cart: React.FC<CartProps> = ({ cart, total, updateQuantity, removeFromCart
             >
               <div className="flex-1">
                 <span className="block text-lg font-semibold text-gray-700">
-                  {item.name}
+                  {item.product.name}
                 </span>
                 <span className="text-gray-600">
-                  ¥{item.price} × {item.quantity}
+                  ¥{item.product.price} × {item.quantity}
                 </span>
               </div>
 

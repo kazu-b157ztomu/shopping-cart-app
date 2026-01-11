@@ -13,7 +13,7 @@ export const products = [
     name: 'Tシャツ',
     price: 1500,
     description: '柔らかくて着心地の良いコットン素材のTシャツです。',
-    image: 'https://via.placeholder.com/200x200.png?text=Tシャツ',
+    image: 'https://placehold.co/200x200?text=Tシャツ',
     
   },
   {
@@ -21,7 +21,7 @@ export const products = [
     name: 'ジーンズ',
     price: 4500,
     description: 'スタイリッシュで丈夫なデニムジーンズ。',
-    image: 'https://via.placeholder.com/200x200.png?text=ジーンズ',
+    image: 'https://placehold.co/200x200?text=ジーンズ',
     
   },
   {
@@ -29,7 +29,55 @@ export const products = [
     name: 'スニーカー',
     price: 8000,
     description: '軽量で快適な履き心地のスニーカー。',
-    image: 'https://via.placeholder.com/200x200.png?text=スニーカー',
+    image: 'https://placehold.co/200x200?text=スニーカー',
+    
+  },
+  {
+    id: 4,
+    name: 'スニーカー',
+    price: 8000,
+    description: '軽量で快適な履き心地のスニーカー。',
+    image: 'https://placehold.co/200x200?text=スニーカー',
+    
+  },
+  {
+    id: 5,
+    name: 'スニーカー',
+    price: 8000,
+    description: '軽量で快適な履き心地のスニーカー。',
+    image: 'https://placehold.co/200x200?text=スニーカー',
+    
+  },
+  {
+    id: 6,
+    name: 'スニーカー',
+    price: 8000,
+    description: '軽量で快適な履き心地のスニーカー。',
+    image: 'https://placehold.co/200x200?text=スニーカー',
+    
+  },
+  {
+    id: 7,
+    name: 'スニーカー',
+    price: 8000,
+    description: '軽量で快適な履き心地のスニーカー。',
+    image: 'https://placehold.co/200x200?text=スニーカー',
+    
+  },
+  {
+    id: 8,
+    name: 'スニーカー',
+    price: 8000,
+    description: '軽量で快適な履き心地のスニーカー。',
+    image: 'https://placehold.co/200x200?text=スニーカー',
+    
+  },
+  {
+    id: 9,
+    name: 'スニーカー',
+    price: 8000,
+    description: '軽量で快適な履き心地のスニーカー。',
+    image: 'https://placehold.co/200x200?text=スニーカー',
     
   },
 ];

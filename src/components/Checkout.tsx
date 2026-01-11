@@ -11,7 +11,7 @@ type FormData = {
 type CheckoutProps = {
   cart: CartItem[];
   total: number;
-  clearCart: () => void;
+  clearCart: () => Promise<void>;
 };
 
 const Checkout: React.FC<CheckoutProps> = ({ cart, total, clearCart }) => {
@@ -37,14 +37,14 @@ const Checkout: React.FC<CheckoutProps> = ({ cart, total, clearCart }) => {
     return undefined;
   };
 
-  const handleSubmit = () => {
+  const handleSubmit = async () => {
     const phoneError = validatePhone(form.phone);
     if (phoneError) {
       setErrors({ phone: phoneError });
       return;
     }
 
-    clearCart();
+    await clearCart();
     alert(`注文を確定しました！\n${form.name} 様、ありがとうございました。`);
     setErrors({});
   };
@@ -62,8 +62,8 @@ const Checkout: React.FC<CheckoutProps> = ({ cart, total, clearCart }) => {
           <ul className="space-y-2">
             {cart.map(item => (
               <li key={item.id} className="flex justify-between text-gray-700">
-                <span>{item.name} × {item.quantity}</span>
-                <span>¥{item.price * item.quantity}</span>
+                <span>{item.product.name} × {item.quantity}</span>
+                <span>¥{item.product.price * item.quantity}</span>
               </li>
             ))}
           </ul>
